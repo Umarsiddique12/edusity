@@ -2,7 +2,6 @@
     margin: 80px auto;
     padding: 0 80px;
     position: relative;
-
 }
 .next-btn, .back-btn{
     position: absolute;
@@ -51,13 +50,24 @@
     align-items: center;
     margin-bottom: 20px;
     font-size: 15px;
-
 }
 
+/* Tablet Styles */
+@media(max-width: 900px){
+    .testimoials{
+        padding: 0 60px;
+        margin: 60px auto;
+    }
+    .slide{
+        padding: 30px;
+    }
+}
 
+/* Mobile Styles */
 @media(max-width: 800px){
     .testimoials{
         padding: 0 40px;
+        margin: 50px auto;
     }
     .next-btn,.back-btn{
         padding: 10px;
@@ -65,10 +75,9 @@
     }
     .testimoials ul li{
         padding: 10px;
-
     }
     .slide{
-        padding: 10px;
+        padding: 25px;
     }
     .slide img{
         width: 50px;
@@ -76,7 +85,16 @@
     }
 }
 
+/* Small Mobile Styles */
 @media(max-width: 600px){
+    .testimoials{
+        padding: 0 20px;
+        margin: 40px auto;
+    }
+    .next-btn,.back-btn{
+        padding: 8px;
+        width: 30px;
+    }
     .user-info{
         display: block;
         margin-bottom:10px ;
@@ -87,5 +105,34 @@
     }
     .slider p{
         font-size: 12px;
+    }
+    .slide{
+        padding: 20px;
+    }
+    .slide img{
+        width: 45px;
+    }
+}
+
+/* Extra Small Mobile Styles */
+@media(max-width: 480px){
+    .testimoials{
+        padding: 0 15px;
+    }
+    .next-btn,.back-btn{
+        padding: 6px;
+        width: 25px;
+    }
+    .slide{
+        padding: 15px;
+    }
+    .slide img{
+        width: 40px;
+    }
+    .user-info h3{
+        font-size: 14px;
+    }
+    .slider p{
+        font-size: 11px;
     }
 }

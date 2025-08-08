@@ -10,21 +10,44 @@
     list-style: none;
     display: inline-block;
     margin-left: 20px;
-
 }
 
+/* Tablet Styles */
+@media(max-width: 900px){
+    .footer{
+        padding: 12px 0;
+    }
+    .footer ul li{
+        margin-left: 15px;
+    }
+}
 
+/* Mobile Styles */
 @media(max-width: 600px){
     .footer{
         display: block;
         text-align: center;
+        padding: 10px 0;
     }
     .footer ul li{
-        margin: 10px;
+        margin: 8px;
+        font-size: 14px;
     }
-
     .footer ul{
-        margin-top: 10px;
+        margin-top: 8px;
     }
+}
 
+/* Small Mobile Styles */
+@media(max-width: 480px){
+    .footer{
+        padding: 8px 0;
+    }
+    .footer ul li{
+        margin: 6px;
+        font-size: 13px;
+    }
+    .footer ul{
+        margin-top: 6px;
+    }
 }
