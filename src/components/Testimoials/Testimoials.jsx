@@ -1,9 +1,7 @@
 import React, { useRef } from 'react'
 import './testimoials.css'
-
 import next_icon from '../../assets/next-icon.png'
 import back_icon from '../../assets/back-icon.png'
-
 import users_1 from '../../assets/user-1.png'
 import users_2 from '../../assets/user-2.png'
 import users_3 from '../../assets/user-3.png'
@@ -36,9 +34,9 @@ const sliderBackward=()=>{
 
 
   return (
-    <div className='testimoials'>
+    <div className='testimoials' id='testimoials'>
         <img src={next_icon} alt="" className='next-btn' onClick={sliderForward}/>
-        <img src={back_icon} alt="" className='back-btn'onClick={sliderBackward}/>
+        <img src={back_icon} alt="" className='back-btn' onClick={sliderBackward}/>
         <div className="slider">
             <ul ref={slider} >
                 <li>
@@ -46,7 +44,7 @@ const sliderBackward=()=>{
                         <div className="user-info">
                             <img src={users_1} alt="" />
                             <div>
-                                <h3>Wiliam Jackson1</h3>
+                                <h3>William Jackson</h3>
                                 <span>Edusity, USA</span>
                             </div>
                         </div>
@@ -60,11 +58,11 @@ const sliderBackward=()=>{
                         <div className="user-info">
                             <img src={users_2} alt="" />
                             <div>
-                                <h3>Wiliam Jackson2</h3>
+                                <h3>Maria Johnson</h3>
                                 <span>Edusity, USA</span>
                             </div>
                         </div>
-                        <p>Choosing to pursue my degree at Edusity was one of the best decisions I've ever made. The supportive community, state-of-the-art facilities, and commitment to academic excellence have truly exceeded my expectations.</p>
+                        <p>The faculty here is exceptional and the learning environment is truly inspiring. I've grown both academically and personally during my time at Edusity.</p>
                         
                     </div>
                 </li>
@@ -74,11 +72,11 @@ const sliderBackward=()=>{
                         <div className="user-info">
                             <img src={users_3} alt="" />
                             <div>
-                                <h3>Wiliam Jackson3</h3>
+                                <h3>David Smith</h3>
                                 <span>Edusity, USA</span>
                             </div>
                         </div>
-                        <p>Choosing to pursue my degree at Edusity was one of the best decisions I've ever made. The supportive community, state-of-the-art facilities, and commitment to academic excellence have truly exceeded my expectations.</p>
+                        <p>Edusity has provided me with the perfect foundation for my career. The practical experience and industry connections have been invaluable.</p>
                         
                     </div>
                 </li>
@@ -88,11 +86,11 @@ const sliderBackward=()=>{
                         <div className="user-info">
                             <img src={users_4} alt="" />
                             <div>
-                                <h3>Wiliam Jackson4</h3>
+                                <h3>Lisa Brown</h3>
                                 <span>Edusity, USA</span>
                             </div>
                         </div>
-                        <p>Choosing to pursue my degree at Edusity was one of the best decisions I've ever made. The supportive community, state-of-the-art facilities, and commitment to academic excellence have truly exceeded my expectations.</p>
+                        <p>I'm grateful for the opportunities Edusity has provided. The research facilities and mentorship programs are world-class.</p>
                         
                     </div>
                 </li>

@@ -27,19 +27,17 @@ nav ul li{
     display: none;
 }
 
-
+/* Tablet Styles */
 @media (max-width: 1000px){
     .logo{
         width: 140px;
-        
-
     }
     nav ul li{
        margin: 10px 15px; 
     }
-
 }
 
+/* Mobile Styles */
 @media (max-width: 840px){
     nav{
         padding: 15px 0;
@@ -54,19 +52,35 @@ nav ul li{
         width: 200px;
         padding-top: 70px;
         transition: 0.5s;
-
     }
     nav ul li{
         display: block;
-        margin: 25px 40px ;
-
+        margin: 25px 40px;
     }
     .menu-icon{
-    display: block ;
-    width: 30px;
-    cursor: pointer;
-  }
-  .hide-mobile-menu{
-    right: 0px;
-  }
+        display: block;
+        width: 30px;
+        cursor: pointer;
+    }
+    .hide-mobile-menu{
+        right: 0px;
+    }
+}
+
+/* Small Mobile Styles */
+@media (max-width: 480px){
+    .logo{
+        width: 120px;
+    }
+    nav ul{
+        width: 180px;
+        right: -180px;
+    }
+    nav ul li{
+        margin: 20px 30px;
+        font-size: 14px;
+    }
+    .menu-icon{
+        width: 25px;
+    }
 }

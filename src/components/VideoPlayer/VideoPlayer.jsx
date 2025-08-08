@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
-import video from '../../assets/video.mp4';
+// import video from '../../assets/video.mp4';
 
-const VideoPlayer = ({ playState, setPlayState }) => {
+const VideoPlayer = ({ playState, setPlayState, videoSrc }) => {
   const player = useRef(null);
 
   const closePlayer = (e) => {
@@ -30,19 +30,40 @@ const VideoPlayer = ({ playState, setPlayState }) => {
         zIndex: 100,
       }}
     >
-      <video
-        src={video}
-        autoPlay
-        controls
-        muted
-        className="video"
-        style={{
-          width: '90%',
-          maxWidth: '900px',
-          height: 'auto',
-          border: '4px solid #fff',
-        }}
-      />
+      {videoSrc ? (
+        <video
+          src={videoSrc}
+          autoPlay
+          controls
+          style={{
+            width: '90%',
+            maxWidth: '900px',
+            height: '400px',
+            border: '4px solid #fff',
+            background: '#333',
+          }}
+        />
+      ) : (
+        <div
+          className="video"
+          style={{
+            width: '90%',
+            maxWidth: '900px',
+            height: '400px',
+            border: '4px solid #fff',
+            background: '#333',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            color: 'white',
+            fontSize: '18px'
+          }}
+        >
+          Video Player Placeholder
+          <br />
+          (Replace with actual video file)
+        </div>
+      )}
     </div>
   );
 };

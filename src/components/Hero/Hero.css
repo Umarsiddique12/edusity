@@ -1,14 +1,15 @@
 .hero{
     width: 100%;
     min-height: 100vh;
-    background: linear-gradient(rgba(8,0,58,0.7), rgba(8,0,58,0.7)), url('../../assets/hero.png');
-
+    background: linear-gradient(rgba(33,46,160,0.85), rgba(33,46,160,0.85)), url('../../assets/hero.png');
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
 .hero-text{
     text-align: center;
